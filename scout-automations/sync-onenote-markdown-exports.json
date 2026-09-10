@@ -1,7 +1,6 @@
 {
-  "id": "l9cwq03tmtvqrj8i",
   "name": "Sync OneNote Markdown exports",
-  "description": "Daily sync of Ravi OS and Personal Coaching OneNote sections to Markdown under RaviOS OneNoteExports.",
+  "description": "Daily sync of selected OneNote sections to Markdown.",
   "schedule": "every day at 6pm",
   "enabled": true,
   "oneShot": false,
@@ -10,7 +9,7 @@
   "steps": [
     {
       "label": "Main",
-      "prompt": "Use the onenote-md skill to sync changed pages only for these OneNote sections: \"Ravi OS\" and \"Personal Coaching\". Destination root: \"C:\\Users\\rramchandran\\OneDrive - Microsoft\\work\\RaviOS\\OneNoteExports\". For each section, run the local CLI via the .cmd launcher with the sync command and the specified destination. After each run, inspect the console output and validation log. Report the section, status, errors count, latest folder, manifest path, and log path. Do not include OneNote page body content in the response."
+      "prompt": "Use the onenote-md skill to sync changed pages only for these OneNote sections: \"<SectionName1>\" and \"<SectionName2>\". Destination root: \"<Destination>\". For each section, run the local CLI via the .cmd launcher with the sync command and the specified destination. After each run, inspect the console output and validation log. Report the section, status, errors count, latest folder, manifest path, and log path. Do not include OneNote page body content in the response."
     }
   ]
 }

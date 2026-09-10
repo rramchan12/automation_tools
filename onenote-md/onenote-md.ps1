@@ -7,7 +7,7 @@ param(
     [string]$Section,
     [string]$Page,
     [Alias('Destination', 'OutputPath')]
-    [string]$Out = 'C:\Users\rramchandran\OneDrive - Microsoft\Documents\Microsoft Scout\OneNoteMarkdown',
+    [string]$Out = (Join-Path (Get-Location).Path 'OneNoteMarkdown'),
     [Alias('Log', 'LogPath')]
     [string]$LogFile,
     [switch]$ChangedOnly,
@@ -78,10 +78,10 @@ onenote-md.ps1 - OneNote to readable Markdown exporter
 Commands:
   help
   list
-  export-page    -Section "Ravi OS" -Page "TAC Chief Architect"
-  export-subtree -Section "Ravi OS" -Page "TAC Chief Architect"
-  export-section -Section "Ravi OS"
-  sync           -Section "Ravi OS" -ChangedOnly
+  export-page    -Section "<SectionName>" -Page "<PageName>"
+  export-subtree -Section "<SectionName>" -Page "<PageName>"
+  export-section -Section "<SectionName>"
+  sync           -Section "<SectionName>" -ChangedOnly
 
 Common parameters:
   -Notebook      Optional notebook name filter.
