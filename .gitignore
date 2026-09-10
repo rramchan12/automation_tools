@@ -1,0 +1,17 @@
+# Generated OneNote export content
+OneNoteMarkdown/
+OneNoteExports/
+**/latest/
+**/versions/
+**/logs/
+**/.onenote-md-manifest.json
+**/*.error.txt
+**/*.xml
+
+# Local and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.log
+
